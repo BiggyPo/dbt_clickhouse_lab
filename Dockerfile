@@ -1,4 +1,4 @@
-ARG DBT_VERSION=1.0.0
+ARG DBT_VERSION=1.8.0
 FROM fishtownanalytics/dbt:${DBT_VERSION}
 
 # Terraform configuration file
