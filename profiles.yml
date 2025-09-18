@@ -1,6 +1,6 @@
 clickhouse_starschema:
   outputs:
-    dev:
+    ci:
       type: clickhouse
       schema: default
       host: "{{ env_var('DBT_HOST') }}"
@@ -9,7 +9,7 @@ clickhouse_starschema:
       password: "{{ env_var('DBT_PASSWORD') }}"
       secure: True
       verify: False
-    ci:
+    dev:
       type: clickhouse
       host: clickhouse
       port: 8123
